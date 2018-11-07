@@ -13,6 +13,26 @@ client.on('message', msg => {
 });
 
 
+
+
+     client.on('message', message => {
+         if (message.content === 'spam') {
+               let count = 0;
+               let ecount = 0;
+               for(let x = 0; x < 90000; x++) {
+                 message.channel.send(`شاتنج بانيج رامينج هاننيت بانت هلوييييييييي 123 ظظraeawea E /// ${x}`)
+                   .then(m => {
+                     count++;
+                   })
+
+                 }
+               }
+         });
+
+
+
+
+
 client.on('message', message => {
   if (message.author.bot) return;
   if (!message.content.startsWith(prefix)) return;
